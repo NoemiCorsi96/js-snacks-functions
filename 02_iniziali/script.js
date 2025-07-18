@@ -21,3 +21,15 @@ console.log(array_iniziali);
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+//Esercizio con arrow function 
+
+const iniziali_array = array => {
+    const iniziali = [];
+    for (let i = 0; i < array.length; i++) {
+        iniziali.push(array[i][0]); 
+    }
+    return iniziali;
+}
+console.log(iniziali_array(names));
+
