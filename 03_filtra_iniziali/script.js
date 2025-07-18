@@ -24,3 +24,16 @@ console.log(array_iniziale_lettera);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+//Riscrivo con arrow function 
+const array_lettera_iniziale = (array, lettera_iniziale) => {
+    const Array = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i][0] == lettera_iniziale) {
+            Array.push(array[i]);
+        }
+    }
+    return Array;
+}
+
+console.log(array_lettera_iniziale(names,lettera));
