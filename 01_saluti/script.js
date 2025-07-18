@@ -5,7 +5,7 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 function saluta(nome) {
-    return 'Ciao'+ nome
+    return 'Ciao'+ ' ' + nome
 }
 
 // Invoca la funzione qui e stampa il risultato in console
@@ -15,3 +15,6 @@ console.log(saluto);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+//Utilizzo arrow function per la risoluzione 
