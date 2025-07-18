@@ -6,7 +6,7 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 
 function numeroVocali(stringa) {
-    //let stringa = '';
+    
     let vocali = ['a', 'e', 'i', 'o', 'u'];
     let contatore = 0;
     for (let i = 0; i < stringa.length; i++){
@@ -27,3 +27,20 @@ const contaVocali= console.log(numeroVocali(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
+
+//Con Arrow function 
+const contare_vocali = stringa => {
+    let vocali = ['a', 'e', 'i', 'o', 'u'];
+    let contatore = 0;
+    for (let i = 0; i < stringa.length; i++){
+         for (let index = 0; index < vocali.length; index ++){
+            
+            if (stringa[i] == vocali[index]) {
+                contatore = contatore + 1;
+            } 
+        }
+    }
+    return contatore
+}
+
+console.log(contare_vocali(word));
