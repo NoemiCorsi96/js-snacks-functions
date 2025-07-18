@@ -18,3 +18,9 @@ console.log(saluto);
 
 
 //Utilizzo arrow function per la risoluzione 
+const ciao_user = (nome_user) => 'Ciao' + ' ' + nome_user
+console.log(ciao_user(userName));
+
+//oppure, dato che c'è un solo parametro, le parentesi tonde sono facoltative
+const hello_user = nome_user => 'Ciao' + ' ' + nome_user
+console.log(hello_user(userName));
